@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c1f19da4-0b4f-40f2-8a4d-a389dc31cf6a",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serialNumber\":\"ADAQEc\",\"droneModel\":null,\"weightLimit\":400.0,\"batteryCapacity\":25,\"droneState\":null,\"medications\":[]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/drone/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"drone",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

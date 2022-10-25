@@ -7,6 +7,7 @@ import javax.validation.constraints.Max;
 import java.util.*;
 
 @Entity
+
 public class Drone {
 
     @Id
@@ -28,7 +29,7 @@ public class Drone {
 
 
     @OneToMany()
-    private final Set<Medication> medications = new HashSet<>();
+    private final List<Medication> medications = new ArrayList<>();
 
     public String getSerialNumber() {
         return serialNumber;
@@ -70,7 +71,7 @@ public class Drone {
         this.droneState = droneState;
     }
 
-    public Set<Medication> getMedications() {
+    public List<Medication> getMedications() {
         return medications;
     }
 
