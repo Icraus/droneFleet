@@ -57,4 +57,9 @@ public class DroneBusinessImpl implements IDroneBusiness {
         drone.getMedications().addAll(medicationStreamSupplier.get().collect(Collectors.toList()));
         return drone;
     }
+
+    @Override
+    public List<String> getDronesInfo() {
+        return StreamSupport.stream(droneDAO.findAll().spliterator(), false).map(e -> e.toString()).collect(Collectors.toList());
+    }
 }

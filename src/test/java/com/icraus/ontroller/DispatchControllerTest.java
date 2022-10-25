@@ -65,6 +65,7 @@ public class DispatchControllerTest {
                 .andReturn();
         Assertions.assertEquals(409, result.getResponse().getStatus());
         droneDAO.delete(drone);
+        droneDAO.deleteById("ADAQEc");
         drone = new Drone();
         drone.setSerialNumber("ADAQEc");
         drone.setBatteryCapacity(25);
@@ -74,7 +75,7 @@ public class DispatchControllerTest {
         result = mockMvc.perform(MockMvcRequestBuilders.post("/drone/register").contentType(MediaType.APPLICATION_JSON).content(droneJson)).andReturn();
 
         Assertions.assertEquals(200, result.getResponse().getStatus());
-        droneDAO.delete(drone);
+        droneDAO.deleteById("ADAQEc");
     }
 
     @Test

@@ -8,4 +8,5 @@ import java.util.List;
 public interface IDroneBusiness {
     Drone registerDrone(Drone drone) throws DroneException;
     Drone loadDroneWithMedication(String droneId, List<Long> medicationIds) throws DroneException;
+    List<String> getDronesInfo();
 }
