@@ -1,27 +1,14 @@
-package controller;
+package com.icraus.controller;
 
 import com.icraus.bussinesslogic.DroneException;
 import com.icraus.bussinesslogic.IDroneBusiness;
-import com.icraus.dao.DroneDAO;
-import com.icraus.dao.MedicationDAO;
 import com.icraus.model.Drone;
-import com.icraus.model.DroneState;
-import com.icraus.model.Medication;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Supplier;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 
 @RestController
