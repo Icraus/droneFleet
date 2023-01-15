@@ -1,4 +1,4 @@
-# Muslasoft Drone Fleet
+# Drone Fleet Algorithm
 
 ### build 
 * To Build the Spring boot app and run the tests
